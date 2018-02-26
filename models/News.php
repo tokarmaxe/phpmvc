@@ -16,7 +16,7 @@ class News{
         if($id){
             $db = Db::getConnection();
 
-            $result = $db->query('SELECT * FROM news WHERE id='. $id);
+            $result = $db->query('SELECT * FROM site WHERE id='. $id);
 
             $newsItem = $result->fetch();
 
@@ -30,13 +30,13 @@ class News{
         $newsList = array();
 
 //        $qu = 'SELECT id, h1,date,short_content '
-//            . 'FROM news '
+//            . 'FROM site '
 //            . 'ORDER BY date DESC '
 //            . 'LIMIT 10';
 //        $result = $db->prepare($qu);
 //        $result->execute();
-//        $result = $db->query('SELECT id, title, data, short_content '. 'FROM news '. 'ORDER BY data DESC '. 'LIMIT 10');
-        $result = $db->query('SELECT id, title, date, short_content FROM news ORDER BY date DESC LIMIT 10');
+//        $result = $db->query('SELECT id, title, data, short_content '. 'FROM site '. 'ORDER BY data DESC '. 'LIMIT 10');
+        $result = $db->query('SELECT id, title, date, short_content FROM site ORDER BY date DESC LIMIT 10');
         $i=0;
 
         while($row = $result->fetch()){

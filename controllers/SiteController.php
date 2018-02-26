@@ -2,25 +2,24 @@
 /**
  * Created by PhpStorm.
  * User: Maxim Tokar`
- * Date: 26.01.2018
- * Time: 15:19
+ * Date: 20.02.2018
+ * Time: 19:07
  */
 include_once ROOT.'/models/Category.php';
 include_once ROOT.'/models/Product.php';
 
-class ProductController
+class SiteController
 {
-    public function actionView($id){
-
+    public function actionIndex()
+    {
         $categories = array();
         $categories = Category::getCategoriesList();
 
-        $product = array();
-        $product = Product::getProductById($id);
+        $latestProducts = array();
+        $latestProducts = Product::getLatestProducts();
 
-        require_once (ROOT.'/views/product/view.php');
+        require_once (ROOT.'/views/site/index.php');
 
         return true;
     }
-
 }

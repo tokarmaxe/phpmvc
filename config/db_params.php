@@ -7,7 +7,7 @@
  */
 return array(
     'host'=>'localhost',
-    'dbname'=>'mvs_site',
+    'dbname'=>'super_mag',
     'user'=>'root',
     'password'=>''
 );
