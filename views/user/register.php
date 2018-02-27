@@ -11,7 +11,7 @@
                     <ul>
                         <?php foreach ($errors as $error): ?>
                             <li> - <?php echo $error; ?></li>
-                        <? endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 <? endif; ?>
                 <div class="singup-form">
