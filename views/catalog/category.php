@@ -36,7 +36,7 @@
                                             <p>
                                                 <a href="/product/<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
                                             </p>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
+                                            <a href="/cart/add/<?php echo $product['id'];?>" class="btn btn-default add-to-cart"><i
                                                     class="fa fa-shopping-cart"></i>В корзину</a>
                                         </div>
                                         <?php if ($product['is_new']): ?>
