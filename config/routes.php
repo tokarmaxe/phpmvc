@@ -29,7 +29,7 @@ return array(
     'cabinet/edit'=>'cabinet/edit',
     'cabinet'=>'cabinet/index',
 
-    'contacts'=>'contacts/index',
+    'contacts'=>'site/contacts',
 
     ''=>'site/index'
 
