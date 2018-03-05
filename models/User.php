@@ -62,6 +62,12 @@ class User
         }
         return false;
     }
+    public static function checkPhone($phone)
+    {
+        if(strlen($phone)<9)
+            return false;
+        return true;
+    }
 
     public static function checkUserData($email, $password)
     {

@@ -36,8 +36,7 @@
                                             <p>
                                                 <a href="/product/<?php echo $lastProduct['id']; ?>"><?php echo $lastProduct['name']; ?></a>
                                             </p>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
-                                                        class="fa fa-shopping-cart"></i>В корзину</a>
+
                                         </div>
                                         <?php if ($lastProduct['is_new']): ?>
                                             <img src="../../template/images/home/new.png" class="new" alt=""/>
@@ -140,11 +139,11 @@
                             </div>
                             <a class="left recommended-item-control" href="#recommended-item-carousel"
                                data-slide="prev">
-                                <i class="fa fa-angle-left"></i>
+                                <i class="fa fa-angle-left">▶</i>
                             </a>
                             <a class="right recommended-item-control" href="#recommended-item-carousel"
                                data-slide="next">
-                                <i class="fa fa-angle-right"></i>
+                                <i class="fa fa-angle-right">▶</i>
                             </a>
                         </div>
                     </div><!--/recommended_items-->

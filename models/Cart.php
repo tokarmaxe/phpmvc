@@ -49,17 +49,32 @@ class Cart
         }
         return false;
     }
+
     public static function getTotalPrice($products)
     {
-        $productsInCart=self::getProducts();
+        $productsInCart = self::getProducts();
 
         $total = 0;
-        if($productsInCart)
-        {
-            foreach($products as $item){
-                $total +=$item['price']*$productsInCart[$item['id']];
+        if ($productsInCart) {
+            foreach ($products as $item) {
+                $total += $item['price'] * $productsInCart[$item['id']];
             }
         }
         return $total;
+    }
+
+    public static function clear()
+    {
+        if ($_SESSION['products']) {
+            unset($_SESSION['products']);
+        }
+    }
+    public static function deleteProduct($id)
+    {
+        $productsInCart = self::getProducts();
+
+        unset($productsInCart[$id]);
+
+        $_SESSION['products'] = $productsInCart;
     }
 }
