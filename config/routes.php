@@ -36,6 +36,13 @@ return array(
     'cabinet/edit'=>'cabinet/edit',
     'cabinet'=>'cabinet/index',
 
+    'admin/product/create'=>'adminProduct/create',
+    'admin/product/update/([0-9]+)'=>'adminProduct/update/$1',
+    'admin/product/delete/([0-9]+)'=>'adminProduct/delete/$1',
+    'admin/product'=>'adminProduct/index',
+
+    'admin/category/create'=>'adminCategory/create',
+
     'admin'=>'admin/index',
 
     'contacts'=>'site/contacts',

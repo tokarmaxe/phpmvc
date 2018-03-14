@@ -31,7 +31,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="<?php echo $lastProduct['image']; ?>" alt=""/>
+                                            <img src="<?php echo Product::getImage($lastProduct['id']); ?>" alt=""/>
                                             <h2><?php echo $lastProduct['price']; ?>$</h2>
                                             <p>
                                                 <a href="/product/<?php echo $lastProduct['id']; ?>"><?php echo $lastProduct['name']; ?></a>
