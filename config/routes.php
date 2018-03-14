@@ -42,6 +42,9 @@ return array(
     'admin/product'=>'adminProduct/index',
 
     'admin/category/create'=>'adminCategory/create',
+    'admin/category/update/([0-9]+)'=>'adminCategory/update/$1',
+    'admin/category/delete/([0-9]+)'=>'adminCategory/delete/$1',
+    'admin/category'=>'adminCategory/index',
 
     'admin'=>'admin/index',
 

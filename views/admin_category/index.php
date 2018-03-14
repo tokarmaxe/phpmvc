@@ -18,21 +18,21 @@
 
             <table class="table-bordered table-striped table">
                 <tr>
-                    <th>ID товара</th>
-                    <th>Артикул</th>
-                    <th>Название товара</th>
-                    <th>Цена</th>
+                    <th>ID категории</th>
+                    <th>Название категории</th>
+                    <th>Порядковый номер</th>
+                    <th>Статус</th>
                     <th></th>
                     <th></th>
                 </tr>
-                <?php foreach ($productsList as $product):?>
+                <?php foreach ($categoriesList as $category):?>
                     <tr>
-                        <td><?php echo $product['id'];?></td>
-                        <td><?php echo $product['code'];?></td>
-                        <td><?php echo $product['name'];?></td>
-                        <td><?php echo $product['price'];?></td>
-                        <td><a href="/admin/product/update/<?php echo $product['id'];?>" title="Редактировать">Edit</a></td>
-                        <td><a href="/admin/product/delete/<?php echo $product['id'];?>" title="Удалить">⛌</a></td>
+                        <td><?php echo $category['id'];?></td>
+                        <td><?php echo $category['name'];?></td>
+                        <td><?php echo $category['sort_order'];?></td>
+                        <td><?php echo $category['status'];?></td>
+                        <td><a href="/admin/category/update/<?php echo $category['id'];?>" title="Редактировать">Edit</a></td>
+                        <td><a href="/admin/category/delete/<?php echo $category['id'];?>" title="Удалить">⛌</a></td>
                     </tr>
                 <?php endforeach;?>
             </table>
