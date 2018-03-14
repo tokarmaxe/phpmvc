@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6cced3a-71dc-4e1b-9d12-75fbb269a5e8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/admin_order/delete.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/admin_order/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/admin_order/view.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/routes.php" afterPath="$PROJECT_DIR$/config/routes.php" />
-      <change beforePath="$PROJECT_DIR$/controllers/AdminOrderController.php" afterPath="$PROJECT_DIR$/controllers/AdminOrderController.php" />
-      <change beforePath="$PROJECT_DIR$/models/Order.php" afterPath="$PROJECT_DIR$/models/Order.php" />
-      <change beforePath="$PROJECT_DIR$/models/Product.php" afterPath="$PROJECT_DIR$/models/Product.php" />
-    </list>
+    <list default="true" id="d6cced3a-71dc-4e1b-9d12-75fbb269a5e8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,12 +241,12 @@
       <workItem from="1520189424613" duration="4549000" />
       <workItem from="1520604427307" duration="4666000" />
       <workItem from="1520880930516" duration="16777000" />
-      <workItem from="1521028236502" duration="13405000" />
+      <workItem from="1521028236502" duration="13466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110956000" />
+    <option name="totallyTimeSpent" value="111017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
